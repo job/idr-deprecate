@@ -11,98 +11,82 @@
 <?rfc tocindent="yes"?>
 <?rfc tocompact="yes"?>
 
-<rfc category="std" docName="draft-snijders-idr-deprecate-30-31-129-00" ipr="trust200902">
-	<front>
-		<title>Deprecation of BGP Path Attribute 30, 31, 129</title>
+<rfc category="std" docName="draft-snijders-idr-deprecate-30-31-129-01" ipr="trust200902">
+    <front>
+        <title>Deprecation of BGP Path Attribute 30, 31, 129</title>
 
-		<author fullname="Job Snijders" initials="J." surname="Snijders">
-			<organization abbrev="NTT">NTT Communications</organization>
-			<address>
-				<postal>
-					<street>Theodorus Majofskistraat 100</street>
-					<code>1065 SZ</code>
-					<city>Amsterdam</city>
-					<country>NL</country>
-				</postal>
-				<email>job@ntt.net</email>
-			</address>
-		</author>
+        <author fullname="Job Snijders" initials="J." surname="Snijders">
+            <organization abbrev="NTT">NTT Communications</organization>
+            <address>
+                <postal>
+                    <street>Theodorus Majofskistraat 100</street>
+                    <code>1065 SZ</code>
+                    <city>Amsterdam</city>
+                    <country>NL</country>
+                </postal>
+                <email>job@ntt.net</email>
+            </address>
+        </author>
 
-		<date />
+        <date />
 
-		<area>Routing</area>
-		<workgroup>IDR</workgroup>
-		<keyword>BGP</keyword>
+        <area>Routing</area>
+        <workgroup>IDR</workgroup>
+        <keyword>BGP</keyword>
 
-		<abstract>
-			<t>
-				This document requests IANA to deprecate the following BGP path
-				attributes values 30, 31 and 129.
-			</t>
-		</abstract>
+        <abstract>
+            <t>
+                This document requests IANA to deprecate the following BGP path
+                attributes values: 30, 31 and 129.
+            </t>
+        </abstract>
 
-		<note title="Requirements Language">
+    </front>
 
-			<t>
-				The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
-				NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and
-				"OPTIONAL" are to be interpreted as described in <xref target="RFC2119" />
-				only when they appear in all upper case. They may also appear
-				in lower or mixed case as English words, without normative
-				meaning.
-			</t>
+    <middle>
+        <section anchor="intro" title="Introduction">
+            <t>
+                It has been discovered that certain BGP Path Attribute values
+                have been used in BGP implementations which have been deployed
+                in the wild while not being assigned by the IANA for such
+                usage. This has led to deployment problems for new technologies
+                such as Large BGP Communities <xref target="I-D.ietf-idr-large-community"/>.
+            </t>
+            <t>
+                The squatting of values 30, 31 and 129 has been confirmed by
+                the involved vendors.
+            </t>
+        </section>
 
-		</note>
+        <section anchor="iana" title="IANA Considerations">
+            <t>
+                Per this document, IANA has marked values 30, 31 and 129 as
+                "deprecated" in the "BGP Path Attributes" registry under the
+                "Border Gateway Protocol (BGP) Parameters" group.
+            </t>
+        </section>
 
-	</front>
+        <section anchor="security" title="Security Considerations">
+            <t>
+                There are no meaningful security consequences arising from this
+                registry update.
+            </t>
+        </section>
 
-	<middle>
-		<section anchor="intro" title="Introduction">
-			<t>
-				It has been discovered that certain BGP Path Attribute values
-				have been used in BGP implementations which have been deployed
-				in the wild while not being assigned by the IANA for such
-				usage. This has led to deployment problems for new technologies
-				such as Large BGP Communities <xref target="I-D.ietf-idr-large-community"/>.
-			</t>
-			<t>
-				The squatting of values 30, 31 and 129 has been confirmed by
-				the involved vendors.
-			</t>
-		</section>
+    </middle>
 
-		<section anchor="iana" title="IANA Considerations">
-			<t>
-				Per this document, IANA has marked the BGP Path Attributes
-				registry entries for values 30, 31, 129 as "deprecated".
-			</t>
-		</section>
+    <back>
 
-		<section anchor="security" title="Security Considerations">
-			<t>
-				There are no meaningful security consequences arising from this
-				registry update.
-			</t>
-		</section>
+        <references title="Informative References">
+            <?rfc include="reference.I-D.draft-ietf-idr-large-community-05"?>
+        </references>
 
-	</middle>
-
-	<back>
-
-		<references title="Normative References">
-			<?rfc include="reference.RFC.2119"?>
-		</references>
-
-		<references title="Informative References">
-			<?rfc include="reference.I-D.draft-ietf-idr-large-community-05"?>
-		</references>
-
-		<section anchor="acknowledgements" title="Acknowledgements">
-			<t>
-				The author would like to gratefully acknowledge Marlien
-				Vijfhuizen who helped discover the squatting of value 30.
-			</t>
-		</section>
-	</back>
+        <section anchor="acknowledgements" title="Acknowledgements">
+            <t>
+                The author would like to gratefully acknowledge Marlien
+                Vijfhuizen who helped discover the squatting of value 30.
+            </t>
+        </section>
+    </back>
 
 </rfc>
