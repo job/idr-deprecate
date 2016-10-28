@@ -13,7 +13,7 @@
 
 <rfc category="std" docName="draft-snijders-idr-deprecate-30-31-129-01" ipr="trust200902">
     <front>
-        <title abbrev="Deprecation of 30, 31 & 129">Deprecation of BGP Path Attribute values 30, 31 and 129</title>
+        <title abbrev="Deprecation of BGP Attribute 30, 31 and 129">Deprecation of BGP Path Attribute values 30, 31 and 129</title>
 
         <author fullname="Job Snijders" initials="J." surname="Snijders">
             <organization abbrev="NTT">NTT Communications</organization>
