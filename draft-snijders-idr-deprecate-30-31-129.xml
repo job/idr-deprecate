@@ -11,9 +11,11 @@
 <?rfc tocindent="yes"?>
 <?rfc tocompact="yes"?>
 
-<rfc category="std" docName="draft-snijders-idr-deprecate-30-31-129-01" ipr="trust200902">
+<rfc category="std" docName="draft-snijders-idr-deprecate-30-31-129-02" ipr="trust200902">
     <front>
-        <title abbrev="Deprecation of BGP Attribute 30, 31 and 129">Deprecation of BGP Path Attribute values 30, 31 and 129</title>
+        <title abbrev="Deprecation Of Squatted BGP Path Attributes">
+            Deprecation of BGP Path Attribute values 30, 31, 129, 241, 242, and 234
+        </title>
 
         <author fullname="Job Snijders" initials="J." surname="Snijders">
             <organization abbrev="NTT">NTT Communications</organization>
@@ -37,7 +39,7 @@
         <abstract>
             <t>
                 This document requests IANA to deprecate the following BGP path
-                attributes values: 30, 31 and 129.
+                attributes values: 30, 31, 129, 241, 242, and 243.
             </t>
         </abstract>
 
@@ -60,9 +62,10 @@
 
         <section anchor="iana" title="IANA Considerations">
             <t>
-                Per this document, IANA has marked values 30, 31 and 129 as
-                "deprecated" in the "BGP Path Attributes" registry under the
-                "Border Gateway Protocol (BGP) Parameters" group.
+                Per this document, IANA has marked values 30, 31, 129, 241,
+                242, and 243 as "deprecated" in the "BGP Path Attributes"
+                registry under the "Border Gateway Protocol (BGP) Parameters"
+                group.
             </t>
         </section>
 
@@ -84,7 +87,9 @@
         <section anchor="acknowledgements" title="Acknowledgements">
             <t>
                 The author would like to gratefully acknowledge Marlien
-                Vijfhuizen who helped discover the squatting of value 30.
+                Vijfhuizen who helped discover the squatting of value 30, Colin
+                Petrie who discovered 243 and Robert Raszuk who pointed at 241
+                and 242.
             </t>
         </section>
     </back>
