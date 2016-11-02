@@ -38,8 +38,8 @@
 
         <abstract>
             <t>
-                This document requests IANA to deprecate the following BGP path
-                attributes values: 30, 31, 129, 241, 242, and 243.
+                This document requests IANA to mark BGP path attribute
+                values 30, 31, 129, 241, 242, and 243 as "deprecated".
             </t>
         </abstract>
 
@@ -55,17 +55,19 @@
                 such as Large BGP Communities <xref target="I-D.ietf-idr-large-community"/>.
             </t>
             <t>
-                The squatting of values 30, 31 and 129 has been confirmed by
-                the involved vendors.
+                The squatting of values 30, 31, 129, 241, 242 and 243 has been
+                confirmed by the involved vendors or through source code
+                review.
             </t>
         </section>
 
         <section anchor="iana" title="IANA Considerations">
             <t>
-                Per this document, IANA has marked values 30, 31, 129, 241,
-                242, and 243 as "deprecated" in the "BGP Path Attributes"
-                registry under the "Border Gateway Protocol (BGP) Parameters"
-                group.
+                Per this document, IANA is requested to mark values 30, 31,
+                129, 241, 242, and 243 as "deprecated" in the "BGP Path
+                Attributes" registry under the "Border Gateway Protocol (BGP)
+                Parameters" group. The marking "deprecated" meaning "use is not
+                recommended" (<xref target="I-D.leiba-cotton-iana-5226bis" />).
             </t>
         </section>
 
@@ -82,14 +84,13 @@
 
         <references title="Informative References">
             <?rfc include="reference.I-D.draft-ietf-idr-large-community-05"?>
+            <?rfc include="reference.I-D.draft-leiba-cotton-iana-5226bis-18"?>
         </references>
 
         <section anchor="acknowledgements" title="Acknowledgements">
             <t>
                 The author would like to gratefully acknowledge Marlien
-                Vijfhuizen who helped discover the squatting of value 30, Colin
-                Petrie who discovered 243 and Robert Raszuk who pointed at 241
-                and 242.
+                Vijfhuizen who helped discover the squatting of value 30.
             </t>
         </section>
     </back>
