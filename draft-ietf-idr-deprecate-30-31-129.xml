@@ -52,7 +52,7 @@
                 have been used in BGP implementations which have been deployed
                 in the wild while not being assigned by the IANA for such
                 usage. This has led to deployment problems for new technologies
-                such as Large BGP Communities <xref target="I-D.ietf-idr-large-community"/>.
+                such as BGP Large Communities <xref target="I-D.ietf-idr-large-community"/>.
             </t>
             <t>
                 The squatting of values 30, 31, 129, 241, 242 and 243 has been
