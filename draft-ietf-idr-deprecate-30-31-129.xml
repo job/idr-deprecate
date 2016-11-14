@@ -83,7 +83,7 @@
     <back>
 
         <references title="Informative References">
-            <?rfc include="reference.I-D.draft-ietf-idr-large-community-05"?>
+            <?rfc include="reference.I-D.draft-ietf-idr-large-community-08"?>
             <?rfc include="reference.I-D.draft-leiba-cotton-iana-5226bis-18"?>
         </references>
 
