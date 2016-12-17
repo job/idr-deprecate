@@ -11,7 +11,7 @@
 <?rfc tocindent="yes"?>
 <?rfc tocompact="yes"?>
 
-<rfc category="std" docName="draft-ietf-idr-deprecate-30-31-129-01" ipr="trust200902">
+<rfc category="std" docName="draft-ietf-idr-deprecate-30-31-129-02" ipr="trust200902">
     <front>
         <title abbrev="Deprecation Of Squatted BGP Path Attributes">
             Deprecation of BGP Path Attribute values 30, 31, 129, 241, 242, and 234
