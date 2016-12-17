@@ -79,10 +79,11 @@ Table of Contents
    Communities [I-D.ietf-idr-large-community] was initially assigned
    value 30, however it was discovered that a certain BGP-4 [RFC4271]
    implementation applied a "Treat-as-withdraw" [RFC7606] strategy to
-   routes containing a valid Large Community attribute, since it was
-   expecting a different data structure.  To prevent users of Large
-   Communities from becoming unreachable from parts of the Internet, a
-   new Early IANA Allocation had to be requested.
+   routes containing a valid Large Community attribute.  The
+   implementation was expecting a different data structure following BGP
+   Path Attribute value 30.  To prevent users of Large Communities from
+   becoming unreachable from parts of the Internet, a new Early IANA
+   Allocation had to be requested.
 
    The squatting of values 30, 31, 129, 241, 242 and 243 has been
    confirmed by the involved vendors or through source code review.
@@ -102,10 +103,9 @@ Table of Contents
 
 4.  Informative References
 
-   [I-D.ietf-idr-large-community]
-              Heitz, J., Snijders, J., Patel, K., Bagdonas, I., and N.
-              Hilliard, "BGP Large Communities", draft-ietf-idr-large-
-              community-08 (work in progress), November 2016.
+
+
+
 
 
 
@@ -113,6 +113,11 @@ Snijders                  Expires June 20, 2017                 [Page 2]
 
 Internet-Draft Deprecation Of Squatted BGP Path Attributes December 2016
 
+
+   [I-D.ietf-idr-large-community]
+              Heitz, J., Snijders, J., Patel, K., Bagdonas, I., and N.
+              Hilliard, "BGP Large Communities", draft-ietf-idr-large-
+              community-08 (work in progress), November 2016.
 
    [I-D.leiba-cotton-iana-5226bis]
               Cotton, M., Leiba, B., and T. Narten, "Guidelines for
@@ -144,11 +149,6 @@ Author's Address
    NL
 
    Email: job@ntt.net
-
-
-
-
-
 
 
 

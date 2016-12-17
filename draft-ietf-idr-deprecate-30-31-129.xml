@@ -61,10 +61,11 @@
                 a certain <xref target="RFC4271">BGP-4</xref> implementation
                 applied a <xref target="RFC7606">"Treat-as-withdraw"</xref>
                 strategy to routes containing a valid Large Community
-                attribute, since it was expecting a different data structure.
-                To prevent users of Large Communities from becoming unreachable
-                from parts of the Internet, a new Early IANA Allocation had to
-                be requested.
+                attribute. The implementation was expecting a different data
+                structure following BGP Path Attribute value 30. To prevent
+                users of Large Communities from becoming unreachable from parts
+                of the Internet, a new Early IANA Allocation had to be
+                requested.
             </t>
             <t>
                 The squatting of values 30, 31, 129, 241, 242 and 243 has been
