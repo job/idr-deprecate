@@ -140,7 +140,8 @@ Internet-Draft Deprecation Of Squatted BGP Path Attributes December 2016
 Appendix A.  Acknowledgements
 
    The author would like to gratefully acknowledge Marlien Vijfhuizen
-   who helped discover the squatting of value 30.
+   who helped discover the squatting of value 30, and Nick Hilliard for
+   his editorial feedback.
 
 Author's Address
 
@@ -151,7 +152,6 @@ Author's Address
    NL
 
    Email: job@ntt.net
-
 
 
 
